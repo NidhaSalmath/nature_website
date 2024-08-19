@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+ 
+/* * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+}  */
+
+:root {
+    --primary: #145e2c;
+    --secondary: #ffd936;
+    --white: #fefefe;
+}
+
+body {
+    font-family: "DM sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url("./asset/image/main.jpeg");
+    min-height: 80vh;
+    min-width: 100%;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+section {
+    margin: 80px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 15%;
+
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary-);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .intro-heading {
+    font-size: 50px;
+}
+
+.main-content .main-heading {
+    font-size: 110px;
+    margin-top: 20px;
+}
+
+.main-content {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 150px;
+    height: 44px;
+    border: 10px;
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-wrap: wrap;
+}
+
+.services {
+    width: 350px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.5);
+}
+
+#testmonial {
+    background: #f1f2fa;
+
+}
+
+#testmonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding: 50px 16px;
+}
+
+#testmonial .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testmonial h1 {
+    font-size: 30px;
+    font-family: 'forum', sans-serif;
+    text-align: center;
+}
+
+#about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+#about-us .container .about-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+
+#about-us .container .about-content h1 {
+    font-family: 'forum', sans-serif;
+    font-size: 30px;
+}
+
+#about-us img {
+    max-width: 300px;
+    max-height: 400px;
+}
+
+#questions {
+    min-height: 500px;
+    background-image: url('./asset/image/main.jpg');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#questions .container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+#questions h1 {
+    font-size: 50px;
+}
+
+footer .container {
+    display: flex;
+    padding: 40px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+ @media screen and (max-width:520px) {
+    .nav-list{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    .nav-list li:not(:last-child) {
+        text-align: left;;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }  
+ #about-us .container {
+    flex-direction: column;
+    gap:30px
+}
+}  
